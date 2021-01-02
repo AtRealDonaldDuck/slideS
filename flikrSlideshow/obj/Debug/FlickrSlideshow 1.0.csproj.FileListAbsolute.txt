@@ -1,0 +1,44 @@
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\FlickrSlideshow 1.0.exe.config
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\FlickrSlideshow 1.0.exe
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\FlickrSlideshow 1.0.pdb
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.csprojAssemblyReference.cache
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\MainWindow.g.cs
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\App.g.cs
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0_MarkupCompile.cache
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0_MarkupCompile.lref
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\MainWindow.baml
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.g.resources
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow_1._0.Properties.Resources.resources
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.csproj.GenerateResource.cache
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.exe
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.pdb
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.csproj.CopyComplete
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\CreatePresetWindow.g.cs
+C:\Users\User\Downloads\Content\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\CreatePresetWindow.baml
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\FlickrSlideshow 1.0.exe.config
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\FlickrSlideshow 1.0.exe
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\FlickrSlideshow 1.0.pdb
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\Newtonsoft.Json.dll
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\Newtonsoft.Json.xml
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.csprojAssemblyReference.cache
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\CreatePresetWindow.g.cs
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\MainWindow.g.cs
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\App.g.cs
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0_MarkupCompile.cache
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0_MarkupCompile.lref
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\CreatePresetWindow.baml
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\MainWindow.baml
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.g.resources
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow_1._0.Properties.Resources.resources
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.csproj.GenerateResource.cache
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.csproj.CoreCompileInputs.cache
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.csproj.CopyComplete
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.exe
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.pdb
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\FlickrSlideshow 1.0.exe.manifest
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\FlickrSlideshow 1.0.application
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.exe.manifest
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.application

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfSerializableCustomPresetButton xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SerializableCustomPresetButton>
+    <PresetName>ghj</PresetName>
+    <FlikrGalleryId>72157716671842277</FlikrGalleryId>
+    <TransitionTimeInSeconds>3</TransitionTimeInSeconds>
+    <AnimationTimeInSeconds>1</AnimationTimeInSeconds>
+  </SerializableCustomPresetButton>
+</ArrayOfSerializableCustomPresetButton>
