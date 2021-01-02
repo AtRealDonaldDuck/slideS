@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="FlickrSlideshow 1.0.exe" version="1.0.0.0" publicKeyToken="2d76e49b89f431b7" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FlickrSlideshow 1.0" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="FlickrSlideshow 1.0.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FlickrSlideshow 1.0.exe" size="35784">
+      <assemblyIdentity name="FlickrSlideshow 1.0" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gE3q1saqiKa8M0F2mfoLhEv2X6GcUFtRd4yBSa/1nYs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="FlickrSlideshow 1.0.exe.config" size="234">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PcKz7eADFF3VPsAOId3cf5mvnveMFAEHYkAHMe6OdLk=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-81KL8S8\A" issuerKeyHash="25051920e8f589456ec16bf466e442f58e902f39" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>bat9HOiVp1xvsN+fx1wEZhbJpezAeD4uREUw8ZEVYwk=</DigestValue></Reference></SignedInfo><SignatureValue>oLZm3lnQfJVKYb+u0V0Ah6Hlovp7WFx/36VicZqWf+4UO+p34+tAAugTrKin+ru0Yi2QPis7MQdNr2cq3S3lDyawwfuK7uzFj673uA/6xkQl+BMbMr+MpEvI2QyclRV8WHrof/xlQq8Nw+UIQY0JGMW6fISeXxorlPcSo+jqaHQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uGYRNzwLmb26zGlnKnnQQ6cxJV2QJhIawAb+pkRYoe+g5Ogre1C5rkkzBU59XylwY6xet1ByRcExlk1ZvZO8pEUPl4gOqpa5EUbztFY/XP80swqT5QrNZVjdQGcU+ywCKuU5MG+2txgIc+u/MATNkYtxX3Y07e7PCpHo+JDHI9U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="09631591f13045442e3e78c0eca5c91666045cc79fdfb06f5ca795e81c7dab6d" Description="" Url=""><as:assemblyIdentity name="FlickrSlideshow 1.0.exe" version="1.0.0.0" publicKeyToken="2d76e49b89f431b7" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-81KL8S8\A</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>U9r5l5eUfBsI9UtvrqarzbeHYnj8SGEZoZaTLlCkweA=</DigestValue></Reference></SignedInfo><SignatureValue>jxsWShHWfQ2IHYD/KN7QwyEI2sKrHwzg512HB0Hu4Y+vbM9SmCyNiNJGdwE6fbPpUnn9V703s5O8zZ/n6MhP8+sSZCikINJdNqDdAqrxNz9+sJSveRDLFBXV8pAGbdMSR/ly1J0izw0eo6k1T1yXmyHcqtmalK7C5ROnCti3d7Q=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uGYRNzwLmb26zGlnKnnQQ6cxJV2QJhIawAb+pkRYoe+g5Ogre1C5rkkzBU59XylwY6xet1ByRcExlk1ZvZO8pEUPl4gOqpa5EUbztFY/XP80swqT5QrNZVjdQGcU+ywCKuU5MG+2txgIc+u/MATNkYtxX3Y07e7PCpHo+JDHI9U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQTrpousjm5YZOVJGA+K5Y8zANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIARABFAFMASwBUAE8AUAAtADgAMQBLAEwAOABTADgAXABBMB4XDTIxMDEwMjExMzQ1NFoXDTIyMDEwMjE3MzQ1NFowLTErMCkGA1UEAx4iAEQARQBTAEsAVABPAFAALQA4ADEASwBMADgAUwA4AFwAQTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuGYRNzwLmb26zGlnKnnQQ6cxJV2QJhIawAb+pkRYoe+g5Ogre1C5rkkzBU59XylwY6xet1ByRcExlk1ZvZO8pEUPl4gOqpa5EUbztFY/XP80swqT5QrNZVjdQGcU+ywCKuU5MG+2txgIc+u/MATNkYtxX3Y07e7PCpHo+JDHI9UCAwEAATANBgkqhkiG9w0BAQsFAAOBgQADhiVAFqj//F0o1Eo7QF8H8ibT5qyr+QjTWKxW4G3EvMf1O7Z+C7cfwpaEX5PfJQPh7MXrLFdR1hQ/IUqWQgzhZjUEjOSRoi3Ra7o8XXRZKso8rxtpbWjEaLlt5ownhnyZGSXDsg1rU3HJY8M5LAm945S3BW9J0j/Byxlh4E+2Ew==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
