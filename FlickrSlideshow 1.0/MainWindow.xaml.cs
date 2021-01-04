@@ -39,6 +39,7 @@ namespace FlickrSlideshow_1._0
         public MainWindow()
         {
             Debug.CreateDebugFiles();
+            LastSelectedCustomPresetButton = null;
             InitializeContextMenu();
             InitializeComponent();
             foreach (var item in PresetButtonList)
@@ -65,10 +66,22 @@ namespace FlickrSlideshow_1._0
 
         private void btnStartSlideshow_Click(object sender, RoutedEventArgs e)
         {
-            btnStartSlideshow.Visibility = Visibility.Hidden;
-            btnExitSlideshow.Visibility = Visibility.Visible;
+            if (stkPnlPresetButtonList.Children.Count == 0)
+            {
+                MessageBox.Show("You must Create a Preset before hitting start." +
+                    "\nYou can Create a Preset by hitting the [+] button on the Left", "No Presets Created", MessageBoxButton.OK);
+            }
+            else if (LastSelectedCustomPresetButton == null)
+            {
+                MessageBox.Show("Please Select a Preset by Clicking one of them on the Left", "No Selected Presets", MessageBoxButton.OK);
+            }
+            else
+            {
+                btnStartSlideshow.Visibility = Visibility.Hidden;
+                btnExitSlideshow.Visibility = Visibility.Visible;
 
-            StartSlideshow(LastSelectedCustomPresetButton);
+                StartSlideshow(LastSelectedCustomPresetButton);
+            }
         }
 
         private async void StartSlideshow(CustomPresetButton lastSelectedPresetButton)

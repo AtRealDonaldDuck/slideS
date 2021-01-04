@@ -1,0 +1,29 @@
+----------	Beta 1.1.0	----------
+
+	> Removed Open Debug Logs button.
+	> Added context menu to main window, context menu includes;
+		Open Debug Logs option.
+	> Added context menu to presets, context menu includes;
+		Edit : opens editing window allowing user to change presets settings.
+		Delete : currently does nothing, in future update will delete preset.
+	> Added button to create/edit preset windows'es GalleryID temporarily labelled '...' which opens Flikr gallery explorer in default browser.
+		In a future update this should be replaced with a dropdown menu including options to view recently entered galleryIds.
+	> Changed 'Fade Out Time ' to 'Animation Time' in create/edit presets window.
+	> Fixed Transition time changing to 0 when clicking edit in presets context menu.
+	> Fixed Animation time's field not being applied.
+	
+----------	Beta 1.2.0	----------
+
+	> Changed default background colour to darkGray
+	> Added option to delete presets in presets context menu
+	> Added saving all user created presets on exiting the application,
+		on application exit, if it does not already exist, a .xml file "CustomPresetButtonList" is created containing all user created presets,
+		this file can be found in bin\Debug and can be replaced with a different xml file so long as its format and name have not been changed 
+	> Added loading all user created presets on opening the application
+	
+----------	Beta 1.2.1	----------
+
+	> Fixed Crashing when entering a non existent GalleryID when creating a preset 
+		now a message pops up explaining what went wrong
+	> Fixed Crashing after clicking start without selecting a preset
+		now a message pops up explaining what went wrong

@@ -93,12 +93,7 @@ namespace FlickrSlideshow_1._0
                         break;
 
                     case MessageBoxResult.Yes:
-                        presetButton = new CustomPresetButton(
-                            txtBoxPresetName.Text, txtBoxGalleryId.Text,
-                            txtBoxTransitionTime.Text.Equals("") ? 3 : Double.Parse(txtBoxTransitionTime.Text),
-                            txtBoxAnimationTime.Text.Equals("") ? 1 : Double.Parse(txtBoxAnimationTime.Text));
-
-                        customProfileSaved = true;
+                        SaveDetails();
 
                         break;
                 }
@@ -124,14 +119,23 @@ namespace FlickrSlideshow_1._0
 
         private void SaveDetails()
         {
-            presetButton = new CustomPresetButton
-                            (txtBoxPresetName.Text, txtBoxGalleryId.Text,
-                            txtBoxTransitionTime.Text.Equals("") ? 3 : Double.Parse(txtBoxTransitionTime.Text),
-                            txtBoxAnimationTime.Text.Equals("") ? 1 : Double.Parse(txtBoxAnimationTime.Text));
+            if (new FlikrAPI().ValidateGalleryId(txtBoxGalleryId.Text.Equals("")? CustomPresetButton.defaultGalleryId : txtBoxGalleryId.Text))
+            {
+                presetButton = new CustomPresetButton
+                                (txtBoxPresetName.Text, txtBoxGalleryId.Text,
+                                txtBoxTransitionTime.Text.Equals("") ? 3 : Double.Parse(txtBoxTransitionTime.Text),
+                                txtBoxAnimationTime.Text.Equals("") ? 1 : Double.Parse(txtBoxAnimationTime.Text));
 
-            customProfileSaved = true;
+                customProfileSaved = true;
 
-            Close();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("The Gallery ID you have entered is Invalid.\nGallery IDs are found in the url of a Flicr.com Gallery," +
+                    "You can browse Flikr galleries by clicking the [...] button near the Gallery Id field.","Invalid GalleryId",
+                    MessageBoxButton.OK);
+            }
         }
 
         private void btnBrowseGalleries_Click(object sender, RoutedEventArgs e)

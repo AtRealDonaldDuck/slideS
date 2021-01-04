@@ -36,10 +36,10 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="72"/>
             </Grid.RowDefinitions>
-    
+            
             <StackPanel x:Name="stkPnlPresetButtonList"
                         Grid.Column="0" Grid.Row="0"/>
-            
+
             <Button x:Name="btnAddPresetButton" Content="+"
                     FontSize="30"
                     Grid.Column="0" Grid.Row="1"

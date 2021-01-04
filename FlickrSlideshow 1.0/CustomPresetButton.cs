@@ -22,6 +22,8 @@ namespace FlickrSlideshow_1._0
         double transitionTimeInMilliseconds;
         double animationTimeInMilliseconds;
 
+        public static string defaultGalleryId = "72157716671842277";
+
         //WHEN ADDING MENU ITEMS
         //add to the end of the list
         //not the start of the list, because reference to the contextmenuitems are hard coded list indexes
@@ -80,7 +82,7 @@ namespace FlickrSlideshow_1._0
 
         public static CustomPresetButton GetDefaultPresetButton()
         {
-            return new CustomPresetButton("Default Gallery", "72157716671842277", 3, 1);
+            return new CustomPresetButton("Default Gallery", defaultGalleryId, 3, 1);
         }      
 
         public CustomPresetButton(string presetName, string galleryId, double? transitionTimeInSeconds, double? animationTimeInSeconds)

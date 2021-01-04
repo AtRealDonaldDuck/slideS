@@ -40,5 +40,28 @@ namespace FlickrSlideshow_1._0
             }
             return flikrUriImageList;
         }
+
+        public bool ValidateGalleryId(string flikrGalleryId)
+        {
+            var request = HttpWebRequest.Create(new Uri($@"https://www.flickr.com/photos/flickr/galleries/{flikrGalleryId}/"));
+            HttpWebResponse response;
+            try
+            {
+                response = (HttpWebResponse)request.GetResponse();
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
