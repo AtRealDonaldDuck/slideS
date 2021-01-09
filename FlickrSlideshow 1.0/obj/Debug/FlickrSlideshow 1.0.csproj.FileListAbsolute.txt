@@ -42,3 +42,11 @@ C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\FlickrSlideshow 
 C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\FlickrSlideshow 1.0.application
 C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.exe.manifest
 C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\obj\Debug\FlickrSlideshow 1.0.application
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\System.Security.AccessControl.dll
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\System.Security.Permissions.dll
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\System.Security.AccessControl.xml
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\System.Security.Permissions.xml
+C:\Users\A\Desktop\Code\SlideShow\FlickrSlideshow 1.0\bin\Debug\System.Security.Principal.Windows.xml

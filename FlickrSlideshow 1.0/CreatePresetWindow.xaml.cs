@@ -20,6 +20,8 @@ namespace FlickrSlideshow_1._0
     /// </summary>
     public partial class CreatePresetWindow : Window
     {
+        static FlickrSlideshow_1._0.Properties.Settings appSettings = FlickrSlideshow_1._0.Properties.Settings.Default;
+
         bool customProfileSaved = false;
         CustomPresetButton presetButton = CustomPresetButton.GetDefaultPresetButton();
 
@@ -119,7 +121,7 @@ namespace FlickrSlideshow_1._0
 
         private void SaveDetails()
         {
-            if (new FlikrAPI().ValidateGalleryId(txtBoxGalleryId.Text.Equals("")? CustomPresetButton.defaultGalleryId : txtBoxGalleryId.Text))
+            if (new FlikrAPI().ValidateGalleryId(txtBoxGalleryId.Text.Equals("")? appSettings.defaultGalleryId : txtBoxGalleryId.Text))
             {
                 presetButton = new CustomPresetButton
                                 (txtBoxPresetName.Text, txtBoxGalleryId.Text,
@@ -140,7 +142,7 @@ namespace FlickrSlideshow_1._0
 
         private void btnBrowseGalleries_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.flickr.com/photos/flickr/galleries");
+            System.Diagnostics.Process.Start(appSettings.flikrGalleryBrowserUrl);
         }
     }
 }

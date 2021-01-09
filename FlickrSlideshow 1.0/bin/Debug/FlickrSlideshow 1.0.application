@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="FlickrSlideshow 1.0.exe.manifest" size="4206">
+    <dependentAssembly dependencyType="install" codebase="FlickrSlideshow 1.0.exe.manifest" size="7075">
       <assemblyIdentity name="FlickrSlideshow 1.0.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>g5or0GfnGnXKZy3DkbVd+RgyJGv8/FpMPIg6nSPaWl4=</dsig:DigestValue>
+        <dsig:DigestValue>aA98SSb2rgTOzadk4Yr1COAO9A+gN2mxeRaphFqOGds=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

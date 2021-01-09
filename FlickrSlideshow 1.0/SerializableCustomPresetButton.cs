@@ -11,6 +11,7 @@ namespace FlickrSlideshow_1._0
     [Serializable()]
     public class SerializableCustomPresetButton : ISerializable
     {
+
         string presetName;
         string flikrGalleryId;
         double transitionTimeInMilliseconds;
@@ -42,7 +43,8 @@ namespace FlickrSlideshow_1._0
 
         public static CustomPresetButton GetDefaultPresetButton()
         {
-            return new CustomPresetButton("Default Gallery", "72157716671842277", 3, 1);
+            return new CustomPresetButton(Properties.Settings.Default.defaultGalleryName , Properties.Settings.Default.defaultGalleryId,
+                Properties.Settings.Default.defaultTransitionTimeInSeconds, Properties.Settings.Default.defaultAnimationTimeInSeconds);
         }
 
         public SerializableCustomPresetButton()

@@ -1,5 +1,27 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FlickrSlideshow_1._0.Properties" GeneratedClassName="Settings">
   <Profiles />
-  <Settings />
+  <Settings>
+    <Setting Name="defaultGalleryId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">72157716671842277</Value>
+    </Setting>
+    <Setting Name="defaultTransitionTimeInSeconds" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="defaultAnimationTimeInSeconds" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="minTransitionTimeInSeconds" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="minAnimationTimeInSeconds" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="defaultGalleryName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Default Gallery</Value>
+    </Setting>
+    <Setting Name="flikrGalleryBrowserUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://www.flickr.com/photos/flickr/galleries</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

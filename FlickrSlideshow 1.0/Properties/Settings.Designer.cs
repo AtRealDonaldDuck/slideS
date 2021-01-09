@@ -22,5 +22,89 @@ namespace FlickrSlideshow_1._0.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("72157716671842277")]
+        public string defaultGalleryId {
+            get {
+                return ((string)(this["defaultGalleryId"]));
+            }
+            set {
+                this["defaultGalleryId"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3")]
+        public double defaultTransitionTimeInSeconds {
+            get {
+                return ((double)(this["defaultTransitionTimeInSeconds"]));
+            }
+            set {
+                this["defaultTransitionTimeInSeconds"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public double defaultAnimationTimeInSeconds {
+            get {
+                return ((double)(this["defaultAnimationTimeInSeconds"]));
+            }
+            set {
+                this["defaultAnimationTimeInSeconds"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.1")]
+        public double minTransitionTimeInSeconds {
+            get {
+                return ((double)(this["minTransitionTimeInSeconds"]));
+            }
+            set {
+                this["minTransitionTimeInSeconds"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.1")]
+        public double minAnimationTimeInSeconds {
+            get {
+                return ((double)(this["minAnimationTimeInSeconds"]));
+            }
+            set {
+                this["minAnimationTimeInSeconds"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Default Gallery")]
+        public string defaultGalleryName {
+            get {
+                return ((string)(this["defaultGalleryName"]));
+            }
+            set {
+                this["defaultGalleryName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://www.flickr.com/photos/flickr/galleries")]
+        public string flikrGalleryBrowserUrl {
+            get {
+                return ((string)(this["flikrGalleryBrowserUrl"]));
+            }
+            set {
+                this["flikrGalleryBrowserUrl"] = value;
+            }
+        }
     }
 }

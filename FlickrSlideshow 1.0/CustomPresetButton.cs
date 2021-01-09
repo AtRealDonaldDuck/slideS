@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
@@ -21,8 +22,6 @@ namespace FlickrSlideshow_1._0
         string flikrGalleryId;
         double transitionTimeInMilliseconds;
         double animationTimeInMilliseconds;
-
-        public static string defaultGalleryId = "72157716671842277";
 
         //WHEN ADDING MENU ITEMS
         //add to the end of the list
@@ -48,7 +47,8 @@ namespace FlickrSlideshow_1._0
         public double TransitionTimeInMilliSeconds //putting transition time at 0 breaks it
         {
             get { return transitionTimeInMilliseconds; }
-            set { transitionTimeInMilliseconds = value > 100 ? value : 100; }
+            set { transitionTimeInMilliseconds = value > Properties.Settings.Default.minTransitionTimeInSeconds * 1000 ? value :
+                    Properties.Settings.Default.minTransitionTimeInSeconds * 1000; }
         }
 
         public double TransitionTimeInSeconds 
@@ -60,7 +60,8 @@ namespace FlickrSlideshow_1._0
         public double AnimationTimeInMilliseconds //putting transition time at 0 breaks it
         {
             get { return animationTimeInMilliseconds; }
-            set { animationTimeInMilliseconds = value > 100 ? value : 100; } 
+            set { animationTimeInMilliseconds = value > Properties.Settings.Default.minAnimationTimeInSeconds * 1000 ? value : 
+                    Properties.Settings.Default.minAnimationTimeInSeconds * 1000; } 
         }
 
         public double AnimationTimeInSeconds
@@ -71,18 +72,19 @@ namespace FlickrSlideshow_1._0
 
         private CustomPresetButton lastSelectedPresetButton
         {
-            get { return FlickrSlideshow_1._0.Properties.Settings.Default.LastSelectedPresetButton; }
-            set { FlickrSlideshow_1._0.Properties.Settings.Default.LastSelectedPresetButton = value; }
+            get { return Properties.Settings.Default.LastSelectedPresetButton; }
+            set { Properties.Settings.Default.LastSelectedPresetButton = value; }
         }
 
         public CustomPresetButton()
         {
-            //Empty Constructor
+            //Intentionally Empty Constructor
         }
 
         public static CustomPresetButton GetDefaultPresetButton()
         {
-            return new CustomPresetButton("Default Gallery", defaultGalleryId, 3, 1);
+            return new CustomPresetButton(Properties.Settings.Default.defaultGalleryName, Properties.Settings.Default.defaultGalleryId,
+                Properties.Settings.Default.defaultTransitionTimeInSeconds, Properties.Settings.Default.defaultTransitionTimeInSeconds);
         }      
 
         public CustomPresetButton(string presetName, string galleryId, double? transitionTimeInSeconds, double? animationTimeInSeconds)
@@ -101,10 +103,12 @@ namespace FlickrSlideshow_1._0
                 ContextMenu.Items.Add(item);
             }
 
-            PresetName = presetName.Equals("") ? "Default Gallery" : presetName;
-            FlikrGalleryId = galleryId.Equals("") ? "72157716671842277" : galleryId;
-            TransitionTimeInSeconds = transitionTimeInSeconds == null ? 3 : (double)transitionTimeInSeconds;
-            AnimationTimeInSeconds = animationTimeInSeconds == null ? 1 : (double)animationTimeInSeconds;
+            PresetName = presetName.Equals("") ? Properties.Settings.Default.defaultGalleryName : presetName;
+            FlikrGalleryId = galleryId.Equals("") ? Properties.Settings.Default.defaultGalleryId : galleryId;
+            TransitionTimeInSeconds = transitionTimeInSeconds == null ? Properties.Settings.Default.defaultTransitionTimeInSeconds :
+                (double)transitionTimeInSeconds;
+            AnimationTimeInSeconds = animationTimeInSeconds == null ? Properties.Settings.Default.defaultAnimationTimeInSeconds :
+                (double)animationTimeInSeconds;
         }
 
         private void btnCustomPresetButton_Click(object sender, RoutedEventArgs e)
@@ -124,8 +128,8 @@ namespace FlickrSlideshow_1._0
 
         private void btnCustomPresetButton_ContextMenu_Delete(object sender, RoutedEventArgs e)
         {
-            FlickrSlideshow_1._0.Properties.Settings.Default.CustomPresetButtonList.RemoveAt(
-                FlickrSlideshow_1._0.Properties.Settings.Default.CustomPresetButtonList.IndexOf(this));
+            Properties.Settings.Default.CustomPresetButtonList.RemoveAt(
+                Properties.Settings.Default.CustomPresetButtonList.IndexOf(this));
 
             this.Visibility = Visibility.Collapsed;
         }
