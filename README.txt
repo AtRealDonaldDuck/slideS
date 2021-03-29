@@ -1,5 +1,4 @@
-The executable to run this file is found in slideS\flikrSlideshow\bin\Debug
-and is titled FlickrSlideshow 1.0.exe.
+The executable to run this file is found at slideS\FlickrSlideshow 1.0\bin\Release\FlickrSlideshow 1.0.exe
 
 If you haven't created a preset and/or haven't clicked a preset before clicking the start button the application will crash.
 

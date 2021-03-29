@@ -1,18 +1,12 @@
-﻿using System.Windows;
-using System.Windows.Media;
-using System.Globalization;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Windows.Media.Imaging;
-using System.Windows.Controls;
 using System.Threading.Tasks;
-using System.IO;
-using System.Net;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
 
 namespace FlickrSlideshow_1._0
 {
@@ -38,30 +32,12 @@ namespace FlickrSlideshow_1._0
 
         public MainWindow()
         {
-            Debug.CreateDebugFiles();
             LastSelectedCustomPresetButton = null;
-            InitializeContextMenu();
             InitializeComponent();
             foreach (var item in PresetButtonList)
             {
                 stkPnlPresetButtonList.Children.Add(item);
             }
-        }
-
-        private void InitializeContextMenu()
-        {
-            var mnuItmOpenDebugLog = new MenuItem() { Header = "Open Debug Log"};
-            mnuItmOpenDebugLog.Click += OpenLogs;
-
-            var contextMenu = new ContextMenu();
-            contextMenu.Items.Add(mnuItmOpenDebugLog);
-
-            ContextMenu = contextMenu;
-        }
-
-        private void OpenLogs(object sender, RoutedEventArgs e)
-        {
-            Debug.OpenLogFile();
         }
 
         private void btnStartSlideshow_Click(object sender, RoutedEventArgs e)
@@ -123,7 +99,7 @@ namespace FlickrSlideshow_1._0
                 Source = new BitmapImage(imageUri),
                 Opacity = grdBackgroundImage.Children.Count == 0 ? 1 : 0
             });
-                        
+
             grdBackgroundImage.Children.Add(borderFiller);
             grdBackgroundImage.Children.Add(backgrounImage);
 

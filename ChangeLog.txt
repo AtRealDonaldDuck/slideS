@@ -14,16 +14,21 @@
 	
 ----------	Beta 1.2.0	----------
 
-	> Changed default background colour to darkGray
-	> Added option to delete presets in presets context menu
+	> Changed default background colour to darkGray.
+	> Added option to delete presets in presets context menu.
 	> Added saving all user created presets on exiting the application,
 		on application exit, if it does not already exist, a .xml file "CustomPresetButtonList" is created containing all user created presets,
-		this file can be found in bin\Debug and can be replaced with a different xml file so long as its format and name have not been changed 
-	> Added loading all user created presets on opening the application
+		this file can be found in bin\Debug and can be replaced with a different xml file so long as its format and name have not been changed.
+	> Added loading all user created presets on opening the application.
 	
 ----------	Beta 1.2.1	----------
 
 	> Fixed Crashing when entering a non existent GalleryID when creating a preset 
-		now a message pops up explaining what went wrong
+		now a message pops up explaining what went wrong.
 	> Fixed Crashing after clicking start without selecting a preset
-		now a message pops up explaining what went wrong
+		now a message pops up explaining what went wrong.
+		
+----------	Beta 1.2.2	----------
+
+	> Removed Debug Log file,folder, and all methods used to interact with the log file.
+	> Cleaned up the code.

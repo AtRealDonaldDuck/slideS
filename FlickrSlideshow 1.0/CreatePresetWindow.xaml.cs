@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace FlickrSlideshow_1._0
 {
@@ -80,7 +70,7 @@ namespace FlickrSlideshow_1._0
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if(customProfileSaved == false)
+            if (customProfileSaved == false)
             {
                 MessageBoxResult messageBoxResults = AskUserToSave();
 
@@ -107,13 +97,13 @@ namespace FlickrSlideshow_1._0
             this.Show();
 
             while (customProfileSaved == false) await Task.Run(() => System.Threading.Thread.Sleep(100));
-            
+
             return presetButton;
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.Key == Key.Enter)
+            if (e.Key == Key.Enter)
             {
                 SaveDetails();
             }
@@ -121,7 +111,7 @@ namespace FlickrSlideshow_1._0
 
         private void SaveDetails()
         {
-            if (new FlikrAPI().ValidateGalleryId(txtBoxGalleryId.Text.Equals("")? appSettings.defaultGalleryId : txtBoxGalleryId.Text))
+            if (new FlikrAPI().ValidateGalleryId(txtBoxGalleryId.Text.Equals("") ? appSettings.defaultGalleryId : txtBoxGalleryId.Text))
             {
                 presetButton = new CustomPresetButton
                                 (txtBoxPresetName.Text, txtBoxGalleryId.Text,
@@ -135,7 +125,7 @@ namespace FlickrSlideshow_1._0
             else
             {
                 MessageBox.Show("The Gallery ID you have entered is Invalid.\nGallery IDs are found in the url of a Flicr.com Gallery," +
-                    "You can browse Flikr galleries by clicking the [...] button near the Gallery Id field.","Invalid GalleryId",
+                    "You can browse Flikr galleries by clicking the [...] button near the Gallery Id field.", "Invalid GalleryId",
                     MessageBoxButton.OK);
             }
         }

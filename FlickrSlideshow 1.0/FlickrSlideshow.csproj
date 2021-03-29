@@ -125,7 +125,6 @@
       <DependentUpon>CreatePresetWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomPresetButton.cs" />
-    <Compile Include="Debug.cs" />
     <Compile Include="FlikrAPI.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

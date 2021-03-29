@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
 
 namespace FlickrSlideshow_1._0
 {
@@ -20,7 +15,7 @@ namespace FlickrSlideshow_1._0
         public string PresetName
         {
             get { return presetName; }
-            set { presetName = value;}
+            set { presetName = value; }
         }
 
         public string FlikrGalleryId
@@ -43,7 +38,7 @@ namespace FlickrSlideshow_1._0
 
         public static CustomPresetButton GetDefaultPresetButton()
         {
-            return new CustomPresetButton(Properties.Settings.Default.defaultGalleryName , Properties.Settings.Default.defaultGalleryId,
+            return new CustomPresetButton(Properties.Settings.Default.defaultGalleryName, Properties.Settings.Default.defaultGalleryId,
                 Properties.Settings.Default.defaultTransitionTimeInSeconds, Properties.Settings.Default.defaultAnimationTimeInSeconds);
         }
 

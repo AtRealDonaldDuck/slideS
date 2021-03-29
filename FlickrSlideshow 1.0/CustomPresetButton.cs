@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
-using System.Xml.Linq;
 
 namespace FlickrSlideshow_1._0
 {
     public class CustomPresetButton : Button
     {
-        double[] buttonMargin = { 10, 10};
+        double[] buttonMargin = { 10, 10 };
         double buttonWidth = 30;
         double buttonHeight = 30;
 
@@ -35,7 +27,7 @@ namespace FlickrSlideshow_1._0
         public string PresetName
         {
             get { return presetName; }
-            set { presetName = value; Content = value.Substring(0, 1); } 
+            set { presetName = value; Content = value.Substring(0, 1); }
         }
 
         public string FlikrGalleryId
@@ -47,12 +39,15 @@ namespace FlickrSlideshow_1._0
         public double TransitionTimeInMilliSeconds //putting transition time at 0 breaks it
         {
             get { return transitionTimeInMilliseconds; }
-            set { transitionTimeInMilliseconds = value > Properties.Settings.Default.minTransitionTimeInSeconds * 1000 ? value :
-                    Properties.Settings.Default.minTransitionTimeInSeconds * 1000; }
+            set
+            {
+                transitionTimeInMilliseconds = value > Properties.Settings.Default.minTransitionTimeInSeconds * 1000 ? value :
+                  Properties.Settings.Default.minTransitionTimeInSeconds * 1000;
+            }
         }
 
-        public double TransitionTimeInSeconds 
-        { 
+        public double TransitionTimeInSeconds
+        {
             get { return transitionTimeInMilliseconds / 1000; }
             set { transitionTimeInMilliseconds = value * 1000; }
         }
@@ -60,8 +55,11 @@ namespace FlickrSlideshow_1._0
         public double AnimationTimeInMilliseconds //putting transition time at 0 breaks it
         {
             get { return animationTimeInMilliseconds; }
-            set { animationTimeInMilliseconds = value > Properties.Settings.Default.minAnimationTimeInSeconds * 1000 ? value : 
-                    Properties.Settings.Default.minAnimationTimeInSeconds * 1000; } 
+            set
+            {
+                animationTimeInMilliseconds = value > Properties.Settings.Default.minAnimationTimeInSeconds * 1000 ? value :
+                  Properties.Settings.Default.minAnimationTimeInSeconds * 1000;
+            }
         }
 
         public double AnimationTimeInSeconds
@@ -85,7 +83,7 @@ namespace FlickrSlideshow_1._0
         {
             return new CustomPresetButton(Properties.Settings.Default.defaultGalleryName, Properties.Settings.Default.defaultGalleryId,
                 Properties.Settings.Default.defaultTransitionTimeInSeconds, Properties.Settings.Default.defaultTransitionTimeInSeconds);
-        }      
+        }
 
         public CustomPresetButton(string presetName, string galleryId, double? transitionTimeInSeconds, double? animationTimeInSeconds)
         {

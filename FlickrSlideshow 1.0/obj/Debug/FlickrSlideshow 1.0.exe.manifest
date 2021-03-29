@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FlickrSlideshow 1.0.exe" size="38344">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FlickrSlideshow 1.0.exe" size="37832">
       <assemblyIdentity name="FlickrSlideshow 1.0" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7S7Z6mZnRN86//35nU7z7we764Q3quGNWzv1LpRgDJk=</dsig:DigestValue>
+        <dsig:DigestValue>B0Tn++SVo5X113WIZUCTfM6OEDgACb3Uqk4QdKHytOI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

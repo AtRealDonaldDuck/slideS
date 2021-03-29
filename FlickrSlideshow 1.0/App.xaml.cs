@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Xml.Serialization;
 
@@ -35,12 +30,12 @@ namespace FlickrSlideshow_1._0
             {
                 var serializablePresetButtonList = new List<SerializableCustomPresetButton>();
 
-            if (File.Exists("CustomPresetButtonList.xml") && !File.ReadAllLines("CustomPresetButtonList.xml").Equals(""))
-                using (var streamReader = File.OpenRead("CustomPresetButtonList.xml"))
-                {
-                    serializablePresetButtonList = (List<SerializableCustomPresetButton>)
-                        new XmlSerializer(typeof(List<SerializableCustomPresetButton>)).Deserialize(streamReader);
-                }
+                if (File.Exists("CustomPresetButtonList.xml") && !File.ReadAllLines("CustomPresetButtonList.xml").Equals(""))
+                    using (var streamReader = File.OpenRead("CustomPresetButtonList.xml"))
+                    {
+                        serializablePresetButtonList = (List<SerializableCustomPresetButton>)
+                            new XmlSerializer(typeof(List<SerializableCustomPresetButton>)).Deserialize(streamReader);
+                    }
 
                 foreach (var item in serializablePresetButtonList)
                 {

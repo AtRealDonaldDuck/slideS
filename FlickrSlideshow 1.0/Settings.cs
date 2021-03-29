@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 
-namespace FlickrSlideshow_1._0.Properties {
+namespace FlickrSlideshow_1._0.Properties
+{
 
     // This class allows you to handle specific events on the settings class:
     //  The SettingChanging event is raised before a setting's value is changed.
